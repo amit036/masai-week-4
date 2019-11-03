@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div><img style="width:1800px;" id="shopNameImage"
+            src="https://onlinegrocerystoreindelhi.files.wordpress.com/2014/08/10361584_497096713755431_705223576784718425_n.png?w=706"></div>
+    <h1>STOCK KEEPER</h1>
+    <div id="statusFont">Status:
+        <span id="status"></span>
+    </div>
+    <div style="float:left;clear: both;" id="stockInOut">
+        <div class="fontStocks">Add/Deduct Stocks</div>
+        <select id="stockAddDeductItems">
+            <option value="select">Select Items</option>
+            <option value="rice">Rice</option>
+            <option value="flour">Flour</option>
+            <option value="mustardOil">Mustard Oil</option>
+            <option value="refinedOil">Refined Oil</option>
+            <option value="massorDal">Massor Dal</option>
+            <option value="moongDal">Moong Dal</option>
+            <option value="chanaDal">Chana Dal</option>
+            <option value="sugar">Sugar</option>
+            <option value="salt">Salt</option>
+        </select><br><br>
+        <input type="number" id="inputQuantity"><br><br>
+        <button id="stockIn" onclick="stockIn()">STOCK IN</button><br><br>
+        <button id="stockOut" onclick="stockOut()">STOCK OUT</button>
+    </div>
+    <div style="float: left">
+        <h2>Remaining Stocks</h2>
+        <div id="itemNames"></div>
+        <input type="text" id="displayStock">
+        <div id="itemImages"></div>
+
+    </div>
+    <div style="float: right" id="displayStockItems">
+        <div class="fontStocks">Check Stock Items</div>
+        <select id="isStock">
+            <option value="select">Select Items</option>
+            <option value="rice">Rice</option>
+            <option value="flour">Flour</option>
+            <option value="mustardOil">Mustard Oil</option>
+            <option value="refinedOil">Refined Oil</option>
+            <option value="massorDal">Massor Dal</option>
+            <option value="moongDal">Moong Dal</option>
+            <option value="chanaDal">Chana Dal</option>
+            <option value="sugar">Sugar</option>
+            <option value="salt">Salt</option>
+        </select><br><br>
+        <button onclick="displaystock()" id="displayBtn">Enter</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
